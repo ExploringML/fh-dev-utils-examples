@@ -13,7 +13,7 @@ pip install fh-dev-utils
 Clone the fh-dev-utils-examples repo:
 ```sh
 git clone https://github.com/ExploringML/fh-dev-utils-examples.git
-cd tailwind-basic
+cd fh-dev-utils-examples/tailwind-basic
 ```
 
 Run the FastHTML app and open in a browser with the url `http://localhost:5001`.
