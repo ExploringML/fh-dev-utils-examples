@@ -12,11 +12,11 @@ pip install fh-dev-utils
 
 Then, clone the fh-dev-utils-examples repo:
 ```sh
-$ git clone https://github.com/ExploringML/fh-dev-utils-examples.git
-$ cd tailwind-basic
+git clone https://github.com/ExploringML/fh-dev-utils-examples.git
+cd tailwind-basic
 ```
 
 Finally, run the FastHTML app and open in a browser with the url `http://localhost:5001`.
 ```sh
-$ python main.py
+python main.py
 ```
