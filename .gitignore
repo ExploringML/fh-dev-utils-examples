@@ -1,0 +1,8 @@
+.sesskey
+public/
+data/
+.ipynb_checkpoints/
+venv/
+.venv/
+__pycache__/
+*.pyc
