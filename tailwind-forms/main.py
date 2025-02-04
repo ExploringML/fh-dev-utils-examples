@@ -21,76 +21,10 @@ def get():
               cls="text-xl text-white/80"),
             cls="bg-gradient-to-br from-purple-600 to-blue-500 p-12 rounded-xl shadow-lg mb-8 text-center"
         ),
-        Div(
-            Div(
-                H2("Simple", cls="text-xl font-semibold mb-2"),
-                P("Clean and intuitive design patterns", 
-                  cls="text-gray-600"),
-                cls="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
-            ),
-            Div(
-                H2("Flexible", cls="text-xl font-semibold mb-2"),
-                P("Adaptable to any design needs", 
-                  cls="text-gray-600"),
-                cls="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
-            ),
-            Div(
-                H2("Modern", cls="text-xl font-semibold mb-2"),
-                P("Built with latest best practices", 
-                  cls="text-gray-600"),
-                cls="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
-            ),
-            cls="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"
-        ),
-        Div(
-            Button("Get Started",
-                  cls="cursor-pointer bg-indigo-500 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition duration-300"),
-            cls="text-center"
-        ),
-        cls="max-w-5xl mx-auto p-6 my-20"
+        cls="max-w-5xl mx-auto p-6 my-8"
     ), Article(
         Header(
-            H1('Exploring the Tailwind Typography Plugin', cls='text-3xl font-bold'),
-            P(
-                'By ',
-                Span('John Doe ', cls='font-semibold'),
-                '| Published on',
-                Time('February 4, 2025', datetime='2025-02-04'),
-                cls='text-gray-600 text-sm'
-            )
-        ),
-        Section(
-            H2('Introduction'),
-            P(
-                'The ',
-                Strong('Tailwind Typography'),
-                ' plugin is an essential tool for enhancing text-based content with a clean and readable design. It simplifies styling for articles, documentation, and blogs.'
-            )
-        ),
-        Section(
-            H2('Why Use the Typography Plugin?'),
-            Ul(
-                Li('Provides default styles for common HTML elements.'),
-                Li('Ensures consistent typography across different sections.'),
-                Li('Works seamlessly with Tailwind’s utility classes.')
-            )
-        ),
-        Section(
-            H2('Code Example'),
-            P('Here’s an example of how you can apply the typography plugin:'),
-            Pre(
-                Code('<article class="prose lg:prose-xl">\r\n        <h1>Hello World</h1>\r\n        <p>This is a sample paragraph styled with Tailwind Typography.</p>\r\n      </article>', cls='language-html')
-            )
-        ),
-        Section(
-            H2('Conclusion'),
-            P("Using the Tailwind Typography plugin makes content presentation effortless. Whether you're building a blog, documentation, or an article-based website, it provides a solid foundation for beautiful text styling."),
-            Blockquote('"Good typography makes a difference in readability and engagement."')
-        ),
-        cls='prose lg:prose-xl mx-auto'
-    ), Article(
-        Header(
-            H1('Building Beautiful Forms with Tailwind', cls='text-3xl font-bold'),
+            H1('Building Beautiful Forms', cls='text-3xl font-bold'),
             P(
                 'By',
                 Span(' John Doe ', cls='font-semibold'),
@@ -161,8 +95,8 @@ def get():
             P('Tailwind makes styling forms easy and highly customizable. By combining utility classes with the typography plugin, we ensure both structure and readability in form-heavy content.'),
             Blockquote('"A well-designed form improves user experience and boosts conversions."')
         ),
-        cls='prose lg:prose-xl mx-auto'
+        cls='prose lg:prose-xl mx-auto mb-20'
     )
 
-if DEV_MODE: serve_dev(tw=True, jupyter=True)
+if DEV_MODE: serve_dev(tw=True)
 else: serve()
