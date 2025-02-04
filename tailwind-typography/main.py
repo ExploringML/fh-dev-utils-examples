@@ -7,7 +7,7 @@ app,rt = fast_app(
     pico=False,
     live=True,
     hdrs=(
-        Link(rel="stylesheet", href=f"/public/app.css{cache_buster() if DEV_MODE else ""}", type="text/css"),
+        Link(rel="stylesheet", href=f"/public/app.css{cache_buster() if DEV_MODE else ''}", type="text/css"),
     )
 )
 

@@ -7,7 +7,7 @@ app,rt = fast_app(
     pico=False,
     live=True,
     hdrs=(
-        Link(rel="stylesheet", href=f"/public/app.css{cache_buster() if DEV_MODE else ""}", type="text/css"),
+        Link(rel="stylesheet", href=f"/public/app.css{cache_buster() if DEV_MODE else ''}", type="text/css"),
     )
 )
 
@@ -16,7 +16,7 @@ def card(icon="🎨", heading="Heading", text="Add content here."):
         Div(icon, cls="text-3xl bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4"),
         H2(heading, cls="text-xl font-bold text-gray-900 mb-3"),
         P(text, cls="text-gray-600 leading-relaxed"),
-        Div(cls="absolute bottom-0 left-0 h-1 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"),
+        Div(cls="absolute bottom-0 left-0 h-1 scale-x-0 transform bg-blue-500 transition-transform duration-300 ease-in-out group-hover:scale-x-100"),
         cls="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100"
     ),
 
