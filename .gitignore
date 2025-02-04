@@ -1,5 +1,4 @@
 .sesskey
-public/
 data/
 .ipynb_checkpoints/
 venv/
